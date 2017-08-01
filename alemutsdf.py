@@ -44,7 +44,7 @@ def get_mut_df(CSV_file_path,
     return csv_file_mutat_df
 
 
-def get_all_sample_mut_df(dir_path,
+def get_all_mut_df(dir_path,
                           include_dups,
                           intragenic_muts_only):
     mutat_df = pd.DataFrame()
