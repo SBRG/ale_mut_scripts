@@ -9,14 +9,6 @@ def get_mut_dataframe(CSV_file_path,
     
     # Step 1: Import database
     raw_db = pd.read_csv(CSV_file_path)
-    if 'Function' in raw_db.columns:
-        raw_db = raw_db.drop('Function', axis=1)
-    if 'Product' in raw_db.columns:
-        raw_db = raw_db.drop('Product', axis=1)
-    if 'GO Process' in raw_db.columns:
-        raw_db = raw_db.drop('GO Process', axis=1)
-    if 'GO Component' in raw_db.columns:
-        raw_db = raw_db.drop('GO Component', axis=1)
     
     # Step 2: Separate columns based on usage       
     keep_cols = ['Position','Mutation Type','Sequence Change','Details','Gene']
