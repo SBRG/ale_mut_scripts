@@ -3,9 +3,9 @@ import pandas as pd
 from tqdm import tqdm
 
 
-def get_mut_dataframe(CSV_file_path,
-                      include_dups,
-                      intragenic_muts_only):
+def get_mut_df(CSV_file_path, 
+	       include_dups,
+               intragenic_muts_only):
     
     # Step 1: Import database
     raw_db = pd.read_csv(CSV_file_path)
