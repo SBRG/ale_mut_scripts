@@ -54,7 +54,7 @@ def get_all_mut_df(dir_path,
         print(file_name)
         file_path = dir_path+'/'+file_name
         file_path_list.append(file_path)
-        mutat_df_list.append(get_mut_dataframe(file_path, include_dups, intragenic_muts_only))
+        mutat_df_list.append(get_mut_df(file_path, include_dups, intragenic_muts_only))
 
     mutat_df = pd.concat(mutat_df_list)
     return mutat_df
