@@ -1,4 +1,4 @@
-Scripts to process mutations exported from ALE Analytics
+Scripts to process mutations exported from ALEdb
 
 get_mut_df(...) will read a mutation CSV file exported from an ALE experiment and return a dataframe.
 
